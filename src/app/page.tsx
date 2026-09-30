@@ -20,7 +20,13 @@ import {
 } from "@/components/Ornaments";
 import { Reveal } from "@/components/Reveal";
 import { TiltCard } from "@/components/TiltCard";
-import { mapsEmbedUrl, mapsSearchUrl, wazeUrl, wedding } from "@/lib/wedding";
+import {
+  asset,
+  mapsEmbedUrl,
+  mapsSearchUrl,
+  wazeUrl,
+  wedding,
+} from "@/lib/wedding";
 
 function SectionTitle({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
@@ -57,7 +63,7 @@ export default function Home() {
             style={{ "--parallax": "80px" } as React.CSSProperties}
           >
             <Image
-              src="/images/floral-tl.png"
+              src={asset("/images/floral-tl.png")}
               alt=""
               width={480}
               height={480}
@@ -70,7 +76,7 @@ export default function Home() {
             style={{ "--parallax": "-60px" } as React.CSSProperties}
           >
             <Image
-              src="/images/floral-br.png"
+              src={asset("/images/floral-br.png")}
               alt=""
               width={304}
               height={506}
@@ -449,7 +455,7 @@ export default function Home() {
 
           <div className="relative mt-14 sm:mt-20">
             <Image
-              src="/images/palace.jpg"
+              src={asset("/images/palace.jpg")}
               alt={`Illustration du ${wedding.venue.name}`}
               width={616}
               height={234}
@@ -481,7 +487,7 @@ export default function Home() {
                 />
                 <TiltCard>
                   <Image
-                    src="/images/invitation.jpg"
+                    src={asset("/images/invitation.jpg")}
                     alt={`Faire-part du mariage de ${wedding.bride} et ${wedding.groom}`}
                     width={1024}
                     height={1536}
@@ -499,7 +505,7 @@ export default function Home() {
                   lanternes du palais.
                 </p>
                 <a
-                  href="/images/invitation.jpg"
+                  href={asset("/images/invitation.jpg")}
                   download="faire-part-yousra-issam.jpg"
                   className="mt-8 inline-flex items-center gap-3 rounded-full border border-gold/60 px-7 py-3.5 font-display text-[0.7rem] tracking-[0.25em] text-gold-dark uppercase transition hover:bg-gold hover:text-ivory"
                 >

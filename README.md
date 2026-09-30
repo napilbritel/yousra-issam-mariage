@@ -9,4 +9,8 @@ npm run build && npm start
 ```
 
 Tout le contenu (noms, date, lieu, textes) se modifie dans
-`src/lib/wedding.ts`. Définissez `NEXT_PUBLIC_SITE_URL` en production pour l'aperçu de partage.
+`src/lib/wedding.ts`. Pour publier les modifications sur GitHub Pages :
+
+```bash
+npm run deploy   # → https://napilbritel.github.io/yousra-issam-mariage/
+```

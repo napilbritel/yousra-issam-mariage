@@ -5,7 +5,7 @@ import {
   Cormorant_Garamond,
   Great_Vibes,
 } from "next/font/google";
-import { wedding } from "@/lib/wedding";
+import { asset, wedding } from "@/lib/wedding";
 import "./globals.css";
 
 const greatVibes = Great_Vibes({
@@ -47,7 +47,9 @@ export const metadata: Metadata = {
     description,
     type: "website",
     locale: "fr_FR",
-    images: [{ url: "/images/invitation.jpg", width: 1024, height: 1536 }],
+    images: [
+      { url: asset("/images/invitation.jpg"), width: 1024, height: 1536 },
+    ],
   },
 };
 

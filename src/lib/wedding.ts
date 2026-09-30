@@ -40,3 +40,7 @@ export const mapsEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent
 export const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(
   [wedding.venue.mapsQuery, wedding.venue.address].filter(Boolean).join(" "),
 )}&navigate=yes`;
+
+/** Chemin d'un fichier de /public, préfixé du basePath (GitHub Pages) */
+export const asset = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
