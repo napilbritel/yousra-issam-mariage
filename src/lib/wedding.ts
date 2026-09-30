@@ -27,7 +27,44 @@ export const wedding = {
   honour:
     "Votre présence sera un honneur et une grande source de bonheur pour nous.",
   closing: "Nous avons hâte de partager avec vous ce merveilleux moment.",
+
+  // Déroulé de la soirée — « time » est facultatif
+  programme: [
+    {
+      title: "Accueil des invités",
+      time: "Dès 21h00",
+      text: "Nous vous accueillons avec joie au Palais Alyakout pour ouvrir cette nuit de fête.",
+      icon: "welcome",
+    },
+    {
+      title: "Entrée des mariés",
+      text: "L’arrivée tant attendue de Yousra & Issam, portés par la joie et les youyous.",
+      icon: "entrance",
+    },
+    {
+      title: "Célébration",
+      text: "Musique, danses et traditions pour célébrer ensemble notre union.",
+      icon: "celebration",
+    },
+    {
+      title: "Dîner",
+      text: "Un dîner de fête partagé avec ceux que nous aimons.",
+      icon: "dinner",
+    },
+    {
+      title: "Gâteau & clôture",
+      text: "Le gâteau des mariés et les derniers instants d’une nuit inoubliable.",
+      icon: "cake",
+    },
+  ],
 } as const;
+
+export type ProgrammeStep = {
+  title: string;
+  time?: string;
+  text: string;
+  icon: "welcome" | "entrance" | "celebration" | "dinner" | "cake";
+};
 
 export const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   [wedding.venue.mapsQuery, wedding.venue.address].filter(Boolean).join(" "),

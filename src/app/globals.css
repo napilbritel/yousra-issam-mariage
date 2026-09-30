@@ -386,6 +386,23 @@ html[data-opened] .light-sweep::after {
   animation: tick 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+/* Fil du programme qui se remplit au défilement */
+@supports (animation-timeline: view()) {
+  .timeline-fill {
+    animation: grow-y linear both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 60%;
+  }
+  @keyframes grow-y {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+}
+
 /* Parallaxe au défilement (navigateurs compatibles) */
 @supports (animation-timeline: scroll()) {
   .parallax {

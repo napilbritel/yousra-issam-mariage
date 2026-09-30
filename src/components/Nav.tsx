@@ -9,23 +9,6 @@ const icon = "h-[22px] w-[22px]";
 
 const sections: Section[] = [
   {
-    id: "top",
-    label: "Accueil",
-    icon: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className={icon}
-        aria-hidden
-      >
-        <path d="M4 21V10.5C4 6.4 7.6 3 12 3s8 3.4 8 7.5V21" />
-        <path d="M9 21v-6.5a3 3 0 0 1 6 0V21M2.5 21h19" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
     id: "invitation",
     label: "Invitation",
     icon: (
@@ -39,6 +22,23 @@ const sections: Section[] = [
       >
         <rect x="3" y="5.5" width="18" height="13" rx="1.5" />
         <path d="M3.5 6.5l8.5 6.5 8.5-6.5" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    id: "programme",
+    label: "Programme",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className={icon}
+        aria-hidden
+      >
+        <circle cx="12" cy="12" r="8.5" />
+        <path d="M12 7.5V12l3 2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -85,6 +85,7 @@ const sections: Section[] = [
 
 const desktopLinks = [
   { href: "#invitation", label: "Invitation" },
+  { href: "#programme", label: "Programme" },
   { href: "#lieu", label: "Lieu" },
   { href: "#faire-part", label: "Faire-part" },
 ];
@@ -129,7 +130,7 @@ export function Nav() {
       },
       { rootMargin: "-45% 0px -50% 0px" },
     );
-    for (const id of ["top", "invitation", "lieu", "faire-part"]) {
+    for (const id of ["top", "invitation", "programme", "lieu", "faire-part"]) {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     }

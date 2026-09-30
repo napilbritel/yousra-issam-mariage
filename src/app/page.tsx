@@ -6,6 +6,7 @@ import { Intro } from "@/components/Intro";
 import { Lanterns } from "@/components/Lanterns";
 import { Nav } from "@/components/Nav";
 import { Petals } from "@/components/Petals";
+import { Programme } from "@/components/Programme";
 import {
   ArchFrame,
   Branch,
@@ -351,6 +352,18 @@ export default function Home() {
               <Countdown />
             </div>
           </Reveal>
+        </section>
+
+        {/* ───────────── Programme ───────────── */}
+        <section
+          id="programme"
+          className="relative scroll-mt-16 overflow-hidden bg-cream bg-zellige px-4 py-20 sm:px-6 sm:py-28"
+        >
+          <div className="absolute inset-0 bg-paper" aria-hidden />
+          <div className="relative">
+            <SectionTitle eyebrow="Le déroulé de la soirée" title="Programme" />
+            <Programme />
+          </div>
         </section>
 
         {/* ───────────── Lieu ───────────── */}
