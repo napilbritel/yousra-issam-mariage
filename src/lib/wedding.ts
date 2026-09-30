@@ -8,12 +8,12 @@ export const wedding = {
   hashtag: "#YousraEtIssam",
 
   // Heure du Maroc (UTC+1)
-  dateISO: "2026-10-11T21:00:00+01:00",
+  dateISO: "2026-10-11T20:00:00+01:00",
   dateLabel: "Dimanche 11 Octobre 2026",
   dayLabel: "11",
   monthLabel: "Octobre",
   yearLabel: "2026",
-  timeLabel: "21h00",
+  timeLabel: "20h00",
 
   venue: {
     name: "Palais Alyakout",
@@ -32,7 +32,7 @@ export const wedding = {
   programme: [
     {
       title: "Accueil des invités",
-      time: "Dès 21h00",
+      time: "Dès 20h00",
       text: "Nous vous accueillons avec joie au Palais Alyakout pour ouvrir cette nuit de fête.",
       icon: "welcome",
     },
