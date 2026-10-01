@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     images: [
-      { url: asset("/images/invitation-2026.jpg"), width: 1024, height: 1536 },
+      { url: asset("/images/faire-part-issam-yousra.jpg"), width: 1024, height: 1536 },
     ],
   },
 };
