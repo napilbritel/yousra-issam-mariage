@@ -371,6 +371,21 @@ html[data-opened] .light-sweep::after {
   animation: hint-tap 2.2s ease-in-out infinite;
 }
 
+/* Filet de lumière entre les deux portes */
+@keyframes seam-glow {
+  from {
+    opacity: 0;
+    transform: scaleX(0.15);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.seam-light.is-glowing {
+  animation: seam-glow 0.6s ease-out 1.2s both;
+}
+
 /* Changement des secondes */
 @keyframes tick {
   from {
