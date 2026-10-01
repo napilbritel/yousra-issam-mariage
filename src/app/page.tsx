@@ -500,7 +500,7 @@ export default function Home() {
                 />
                 <TiltCard>
                   <Image
-                    src={asset("/images/invitation.jpg")}
+                    src={asset("/images/invitation-2026.jpg")}
                     alt={`Faire-part du mariage de ${wedding.bride} et ${wedding.groom}`}
                     width={1024}
                     height={1536}
@@ -518,7 +518,7 @@ export default function Home() {
                   lanternes du palais.
                 </p>
                 <a
-                  href={asset("/images/invitation.jpg")}
+                  href={asset("/images/invitation-2026.jpg")}
                   download="faire-part-yousra-issam.jpg"
                   className="mt-8 inline-flex items-center gap-3 rounded-full border border-gold/60 px-7 py-3.5 font-display text-[0.7rem] tracking-[0.25em] text-gold-dark uppercase transition hover:bg-gold hover:text-ivory"
                 >
