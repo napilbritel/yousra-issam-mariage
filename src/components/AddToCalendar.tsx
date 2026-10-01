@@ -10,7 +10,7 @@ const fmt = (d: Date) =>
     .replace(/[-:]/g, "")
     .replace(/\.\d{3}/, "");
 
-const title = `Mariage de ${wedding.bride} & ${wedding.groom}`;
+const title = `Mariage de ${wedding.groom} & ${wedding.bride}`;
 const location = [wedding.venue.name, wedding.venue.address]
   .filter(Boolean)
   .join(", ");
@@ -25,9 +25,9 @@ function downloadIcs() {
   const ics = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//YousraIssam//Mariage//FR",
+    "PRODID:-//IssamYousra//Mariage//FR",
     "BEGIN:VEVENT",
-    `UID:mariage-${fmt(start)}@yousra-issam`,
+    `UID:mariage-${fmt(start)}@issam-yousra`,
     `DTSTAMP:${fmt(new Date())}`,
     `DTSTART:${fmt(start)}`,
     `DTEND:${fmt(end)}`,
@@ -42,7 +42,7 @@ function downloadIcs() {
   );
   const a = document.createElement("a");
   a.href = url;
-  a.download = "mariage-yousra-issam.ics";
+  a.download = "mariage-issam-yousra.ics";
   a.click();
   URL.revokeObjectURL(url);
 }

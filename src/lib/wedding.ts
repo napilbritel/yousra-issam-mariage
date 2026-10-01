@@ -5,7 +5,7 @@ export const wedding = {
   bride: "Yousra",
   groom: "Issam",
   monogram: "Y&I",
-  hashtag: "#YousraEtIssam",
+  hashtag: "#IssamEtYousra",
 
   // Heure du Maroc (UTC+1)
   dateISO: "2026-10-11T20:00:00+01:00",
@@ -38,7 +38,7 @@ export const wedding = {
     },
     {
       title: "Entrée des mariés",
-      text: "L’arrivée tant attendue de Yousra & Issam, portés par la joie et les youyous.",
+      text: "L’arrivée tant attendue d’Issam & Yousra, portés par la joie et les youyous.",
       icon: "entrance",
     },
     {

@@ -33,7 +33,7 @@ const amiri = Amiri({
   subsets: ["arabic"],
 });
 
-const title = `${wedding.bride} & ${wedding.groom} — ${wedding.dayLabel} ${wedding.monthLabel} ${wedding.yearLabel}`;
+const title = `${wedding.groom} & ${wedding.bride} — ${wedding.dayLabel} ${wedding.monthLabel} ${wedding.yearLabel}`;
 const description = `${wedding.intro} ${wedding.venue.name}, ${wedding.timeLabel}.`;
 
 export const metadata: Metadata = {

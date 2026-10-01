@@ -242,7 +242,7 @@ export function Intro() {
               opened ? "-translate-y-4 opacity-0" : ""
             }`}
           >
-            {wedding.bride} & {wedding.groom}
+            {wedding.groom} & {wedding.bride}
           </h1>
 
           {/* Enveloppe */}
@@ -268,7 +268,7 @@ export function Intro() {
             >
               <span className="absolute inset-1.5 rounded-sm border border-gold/25" />
               <span className="px-2 pb-1 font-script text-[2rem] leading-tight text-gold-foil sm:text-4xl">
-                {wedding.bride} & {wedding.groom}
+                {wedding.groom} & {wedding.bride}
               </span>
               <span className="font-display text-[0.6rem] tracking-[0.3em] text-cocoa-soft">
                 {wedding.dayLabel} · 10 · {wedding.yearLabel}

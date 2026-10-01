@@ -92,7 +92,7 @@ const desktopLinks = [
 
 async function share() {
   const data = {
-    title: `Mariage de ${wedding.bride} & ${wedding.groom}`,
+    title: `Mariage de ${wedding.groom} & ${wedding.bride}`,
     text: `${wedding.dateLabel} · ${wedding.venue.name}`,
     url: window.location.href.split("#")[0],
   };

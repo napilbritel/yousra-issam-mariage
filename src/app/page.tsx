@@ -193,7 +193,7 @@ export default function Home() {
                 style={{ "--ink-delay": "0.7s" } as React.CSSProperties}
               >
                 <span className="block px-4 pb-2 font-script text-[clamp(4rem,20vw,8rem)] leading-[1.05] text-gold-foil">
-                  {wedding.bride}
+                  {wedding.groom}
                 </span>
               </span>
               <span
@@ -212,7 +212,7 @@ export default function Home() {
                 style={{ "--ink-delay": "2s" } as React.CSSProperties}
               >
                 <span className="block px-4 pb-4 font-script text-[clamp(4rem,20vw,8rem)] leading-[1.05] text-gold-foil">
-                  {wedding.groom}
+                  {wedding.bride}
                 </span>
               </span>
             </h1>
@@ -501,7 +501,7 @@ export default function Home() {
                 <TiltCard>
                   <Image
                     src={asset("/images/faire-part-issam-yousra.jpg")}
-                    alt={`Faire-part du mariage de ${wedding.bride} et ${wedding.groom}`}
+                    alt={`Faire-part du mariage de ${wedding.groom} et ${wedding.bride}`}
                     width={1024}
                     height={1536}
                     className="relative rounded-sm shadow-[0_40px_80px_-40px_rgba(74,53,33,0.8)]"
@@ -519,7 +519,7 @@ export default function Home() {
                 </p>
                 <a
                   href={asset("/images/faire-part-issam-yousra.jpg")}
-                  download="faire-part-yousra-issam.jpg"
+                  download="faire-part-issam-yousra.jpg"
                   className="mt-8 inline-flex items-center gap-3 rounded-full border border-gold/60 px-7 py-3.5 font-display text-[0.7rem] tracking-[0.25em] text-gold-dark uppercase transition hover:bg-gold hover:text-ivory"
                 >
                   <svg
