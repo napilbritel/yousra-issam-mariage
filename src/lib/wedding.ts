@@ -17,9 +17,12 @@ export const wedding = {
 
   venue: {
     name: "Palais Alyakout",
-    // Ajoutez la ville / l'adresse exacte pour une carte plus précise
-    address: "",
-    mapsQuery: "Palais Alyakout",
+    address: "Oulad Hammou, 30070 — Maroc",
+    // Position exacte de la salle (épingle Apple Plans fournie par les mariés)
+    lat: 33.944801,
+    lng: -4.990668,
+    appleMapsUrl:
+      "https://maps.apple.com/place?address=30070%20Oulad%20Hammou,%20Morocco&auid=6279272854765515406&coordinate=33.944801,-4.990668&lsp=6489&name=30070%20Oulad%20Hammou&map=explore",
   },
 
   intro:
@@ -66,17 +69,15 @@ export type ProgrammeStep = {
   icon: "welcome" | "entrance" | "celebration" | "dinner" | "cake";
 };
 
-export const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  [wedding.venue.mapsQuery, wedding.venue.address].filter(Boolean).join(" "),
-)}`;
+const coords = `${wedding.venue.lat},${wedding.venue.lng}`;
 
-export const mapsEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(
-  [wedding.venue.mapsQuery, wedding.venue.address].filter(Boolean).join(" "),
-)}&z=15&output=embed`;
+export const mapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${coords}`;
 
-export const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent(
-  [wedding.venue.mapsQuery, wedding.venue.address].filter(Boolean).join(" "),
-)}&navigate=yes`;
+export const mapsEmbedUrl = `https://maps.google.com/maps?q=${coords}&z=16&output=embed`;
+
+export const wazeUrl = `https://waze.com/ul?ll=${coords}&navigate=yes`;
+
+export const appleMapsUrl = wedding.venue.appleMapsUrl;
 
 /** Chemin d'un fichier de /public, préfixé du basePath (GitHub Pages) */
 export const asset = (path: string) =>

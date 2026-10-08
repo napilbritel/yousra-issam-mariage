@@ -22,6 +22,7 @@ import {
 import { Reveal } from "@/components/Reveal";
 import { TiltCard } from "@/components/TiltCard";
 import {
+  appleMapsUrl,
   asset,
   mapsEmbedUrl,
   mapsSearchUrl,
@@ -461,6 +462,14 @@ export default function Home() {
                   className="flex min-h-12 items-center justify-center rounded-full border border-gold/60 px-4 font-display text-[0.65rem] tracking-[0.2em] text-gold-dark uppercase transition hover:bg-gold hover:text-ivory"
                 >
                   Waze
+                </a>
+                <a
+                  href={appleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="col-span-2 flex min-h-12 items-center justify-center rounded-full border border-gold/60 px-4 font-display text-[0.65rem] tracking-[0.2em] text-gold-dark uppercase transition hover:bg-gold hover:text-ivory"
+                >
+                  Apple Plans
                 </a>
               </div>
             </Reveal>
